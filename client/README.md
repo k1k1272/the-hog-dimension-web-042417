@@ -24,9 +24,10 @@ This react app will serve as the client and UX for our rails API driven hog expe
     **These should all be relatively minor changes. Make sure to familiarize yourself with how the sides are resolving their data/css before starting on these!**
 
   5. In our 'tiled'/'unfolded' view (after we click the glowing pig) we are going to incorporate our hogs api. You will notice we are providing only hog mugshots right now. We also have each hog's name in the same place its 'img' ref is kept, but we are not using it yet. All other data will be fetched from our rails api.
-  - In addition to the hog profile photos on each tile, their name should be displayed. Make a decision on what this should look like (maybe a tooltip, maybe an overlay). As long as the hog name is comfortable to read.
-  - When a user clicks on an individual hog tile we want a nice large [modal](https://en.wikipedia.org/wiki/Modal_window) that displays all the additional information about that specific hog that exists on our API.  Implement this however you see fit - a new component seems like a good starting place.
-  - Communication with the rails API must use JWT!
+    - In addition to the hog profile photos on each tile, their name should be displayed. Make a decision on what this should look like (maybe a tooltip, maybe an overlay). As long as the hog name is comfortable to read.
+    - When a user clicks on an individual hog tile we want a nice large [modal](https://en.wikipedia.org/wiki/Modal_window) that displays all the additional information about that specific hog that exists on our API.  Implement this however you see fit - a new component seems like a good starting place.
+    - Communication with the rails API must use JWT!
+
 
   While we could simply fetch all the data from the API when the react app starts up, we know that eventually this will be a hogsperience with over 10k viewable hogs. In anticipation of having more data that we are willing to serve in bulk, we want to ensure a hog's data is only served once the user has provided an indication that they want to access it.
 
@@ -34,21 +35,20 @@ This react app will serve as the client and UX for our rails API driven hog expe
 
   1. Re: the three 'handleKeyDownX' functions in cube.component:
       1. 'handleKeyDownCodeGolf'
-        - why are we overwriting 'e' instead of assigning a new variable name?
-        - would this work if we simply assigned a new variable name?
-        - how would 'use strict' affect this?
+          - why are we overwriting 'e' instead of assigning a new variable name?
+          - would this work if we simply assigned a new variable name?
+          - how would 'use strict' affect this?
       2. 'handleKeyDownBoringCompromise'
-        - how can I learn to forgive myself for creating this?
+          - how can I learn to forgive myself for creating this?
       3. 'handleKeyDownClassicStahp'
-        - does the '||' check serve any purpose if the event is always passing both regardless in Chrome?
-
-  **Are any of these functions ideal for expressing what we want to do? Discuss this with [a] classmate[s]. Choose one or write a refactored one**
+          - does the '||' check serve any purpose if the event is always passing both regardless in Chrome?
+      4. **Are any of these functions ideal for expressing what we want to do? Discuss this with [a] classmate[s]. Choose one or write a refactored one. Eradicate the others.**
 
   2. After a user activates an api call to fetch a hog's data, does it make sense to store that on the client's end instead of always re-fetching the data?
-    - Implement a feature that, if the user has already accessed a specific hog's data, allows the client to only make each specific api call once.
+    - Implement a feature that, if the user   has already accessed a specific hog's data, allows the client to only make each specific api call once.
     - Describe the limitations of this feature as our number of accessible hogs scales. What are some other solutions we can implement for a scaling data pool?
 
-  3. Refactor our application so that when a user presses backspace when viewing a single hog's modal/info page, we should return back to the 'unfolded/tiled' view of our hogs. Do the same to revert the cube from its 'unfolded/tiled' state back to its natural state. There are many ways to skin this cat, though one react library in particular (that we have been working with) jumps to mind.
+  3. Refactor our application so that when a  user presses backspace when viewing a single hog's modal/info page, we should return back to the 'unfolded/tiled' view of our hogs. Do the same to revert the cube from its 'unfolded/tiled' state back to its natural state. There are many ways to skin this cat, though one react library in particular (that we have been working with) jumps to mind.
 
   4. Our tile slide out animation is cool, but what we really want to do is provide an effect that makes it appear as though our cube is 'unfolding', instead of tiles sliding out. Implement this for a new side. Check out our helpers/cubeAnimator.js file for an idea where to get started.
 
