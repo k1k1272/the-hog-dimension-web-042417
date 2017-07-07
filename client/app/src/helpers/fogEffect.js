@@ -50,7 +50,6 @@
   clear = function() {
     ctx.globalCompositeOperation = 'destination-out';
     ctx.fillStyle = 'hsla(0, 0%, 0%, .05)';
-    console.log(cw, ch)
     ctx.fillRect(0, 0, cw, ch);
     return ctx.globalCompositeOperation = 'lighter';
   };
