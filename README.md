@@ -10,4 +10,6 @@ Take a moment digesting the structure in context of the features we want to impl
 
 You will find a README.md in both the client and server directories describing deliverables for each.
 Our server's seed data (porkers_data.json) is located in this directory.
-While it is entirely up to you in what order you complete this lab, I would recommend starting with the client deliverables. They may help inform you of the role the back end should play. 
+While it is entirely up to you in what order you complete this lab, I would recommend starting with the client deliverables. They may help inform you of the role the back end should play.
+
+<!-- Hellllo -->
