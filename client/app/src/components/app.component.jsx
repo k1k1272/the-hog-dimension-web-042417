@@ -16,7 +16,7 @@ export default class App extends Component {
 
   componentDidMount() {
     console.log('starting background fog')
-    require('../helpers/fogEffect.js')
+    // require('../helpers/fogEffect.js')
   }
 
   render() {

@@ -11,7 +11,7 @@ This react app will serve as the client and UX for our rails API driven hog expe
 ## Deliverables:
 
   1. First things first -- familiarize yourself with the component structure of the application. There are a lot of moving parts here, and we want to be able to isolate the few areas where we are going to add features.
-
+  
   2. That background is cool, but it's giving me a hot potato! Unless you are running a L33T MLG gamer rig you may want to disable it while we are developing. Let's make it so neither the canvas element, nor the script that starts it, executes. Potato still cooking? Disable that poo gif!
 
   3. Currently, whenever we want to start developing, we have to run two separate bash commands to watch and serve our bundle. That's just crazy! In package.json let's add an additional alias to 'scripts' that both 'watches' as well as 'starts' our index.js file. In bash, we can use '&' to execute multiple processes in a non-blocking manner.
