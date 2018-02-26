@@ -1,7 +1,6 @@
 0 info it worked if it ends with ok
 1 verbose cli [ '/Users/k1k1272/.nvm/versions/node/v6.11.2/bin/node',
 1 verbose cli   '/Users/k1k1272/.nvm/versions/node/v6.11.2/bin/npm',
-1 verbose cli   'run',
 1 verbose cli   'start' ]
 2 info using npm@3.10.10
 3 info using node@v6.11.2
@@ -9,7 +8,7 @@
 4 verbose stack     at Error (native)
 5 verbose cwd /Users/k1k1272/Javascript/the-hog-dimension-web-042417
 6 error Darwin 17.4.0
-7 error argv "/Users/k1k1272/.nvm/versions/node/v6.11.2/bin/node" "/Users/k1k1272/.nvm/versions/node/v6.11.2/bin/npm" "run" "start"
+7 error argv "/Users/k1k1272/.nvm/versions/node/v6.11.2/bin/node" "/Users/k1k1272/.nvm/versions/node/v6.11.2/bin/npm" "start"
 8 error node v6.11.2
 9 error npm  v3.10.10
 10 error path /Users/k1k1272/Javascript/the-hog-dimension-web-042417/package.json
